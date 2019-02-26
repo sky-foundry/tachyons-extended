@@ -5,6 +5,7 @@ Extended styles for tachyons.
 ## Features
 
 * Added `xl` breakpoint
+* Added `a` modifiers to margin for `auto`
 
 ## Getting started
 
