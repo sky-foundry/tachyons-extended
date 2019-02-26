@@ -1,15 +1,15 @@
 {
-  "name": "tachyons",
-  "version": "4.11.2",
-  "description": "Functional CSS for humans",
-  "author": "mrmrs",
-  "style": "css/tachyons.min.css",
-  "main": "css/tachyons.css",
+  "name": "tachyons-extended",
+  "version": "1.0.0",
+  "description": "Extended styles for tachyons",
+  "author": "Sky Foundry <info@skyfoundry.com.au>",
+  "style": "css/tachyons-extended.min.css",
+  "main": "css/tachyons-extended.css",
   "files": [
     "css",
     "src"
   ],
-  "repository": "tachyons-css/tachyons",
+  "repository": "sky-foundry/tachyons-extended",
   "keywords": [
     "css",
     "oocss",
@@ -17,9 +17,9 @@
     "functional css",
     "design",
     "responsive",
-    "performance"
+	"performance",
+	"extended"
   ],
-  "license": "MIT",
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
@@ -28,22 +28,12 @@
     "tachyons-cli": "^1.3.2",
     "watch": "^1.0.2"
   },
-  "contributors": [
-    {
-      "name": "adam morse",
-      "email": "hi@mrmrs.cc"
-    },
-    {
-      "name": "john otander",
-      "url": "http://johnotander.com"
-    }
-  ],
   "scripts": {
-    "start": "npm run build:watch",
+    "start": "yarn run build:watch",
     "mutations": "immutable-css src/tachyons.css --strict",
-    "build": "npm run build:css && npm run build:minify",
+    "build": "yarn run build:css && yarn run build:minify",
     "build:css": "tachyons src/tachyons.css > css/tachyons.css",
     "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
-    "build:watch": "watch \"npm run build\" ./src/"
+    "build:watch": "watch \"yarn run build\" ./src/"
   }
 }
