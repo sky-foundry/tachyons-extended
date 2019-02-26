@@ -1,5 +1,5 @@
 {
-  "name": "tachyons-extended",
+  "name": "@sky-foundry/tachyons-extended",
   "version": "1.0.0",
   "description": "Extended styles for tachyons",
   "author": "Sky Foundry <info@skyfoundry.com.au>",
@@ -9,7 +9,10 @@
     "css",
     "src"
   ],
-  "repository": "sky-foundry/tachyons-extended",
+  "repository": {
+	"url": "sky-foundry/tachyons-extended",
+    "type": "git"
+  },
   "keywords": [
     "css",
     "oocss",
@@ -17,23 +20,23 @@
     "functional css",
     "design",
     "responsive",
-	"performance",
-	"extended"
+    "performance",
+    "extended"
   ],
   "devDependencies": {
     "copy-files": "^0.1.0",
     "immutable-css-cli": "^1.1.1",
     "normalize.css": "^8.0.0",
-    "tachyons-modules": "^1.1.10",
     "tachyons-cli": "^1.3.2",
+    "tachyons-modules": "^1.1.10",
     "watch": "^1.0.2"
   },
   "scripts": {
     "start": "yarn run build:watch",
-    "mutations": "immutable-css src/tachyons.css --strict",
+    "mutations": "immutable-css src/tachyons-extended.css --strict",
     "build": "yarn run build:css && yarn run build:minify",
-    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
-    "build:minify": "tachyons src/tachyons.css --minify > css/tachyons.min.css",
+    "build:css": "tachyons src/tachyons-extended.css > css/tachyons-extended.css",
+    "build:minify": "tachyons src/tachyons-extended.css --minify > css/tachyons-extended.min.css",
     "build:watch": "watch \"yarn run build\" ./src/"
   }
 }
