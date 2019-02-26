@@ -7,31 +7,13 @@
      -ns = not-small
      -m  = medium
      -l  = large
+     -xl = extra-large
 
 */
 
-.static { position: static; }
-.relative  { position: relative; }
-.absolute  { position: absolute; }
-.fixed  { position: fixed; }
-
-@media (--breakpoint-not-small) {
-  .static-ns { position: static; }
-  .relative-ns  { position: relative; }
-  .absolute-ns  { position: absolute; }
-  .fixed-ns  { position: fixed; }
-}
-
-@media (--breakpoint-medium) {
-  .static-m { position: static; }
-  .relative-m  { position: relative; }
-  .absolute-m  { position: absolute; }
-  .fixed-m  { position: fixed; }
-}
-
-@media (--breakpoint-large) {
-  .static-l { position: static; }
-  .relative-l  { position: relative; }
-  .absolute-l  { position: absolute; }
-  .fixed-l  { position: fixed; }
+@media (--breakpoint-extra-large) {
+  .static-xl { position: static; }
+  .relative-xl  { position: relative; }
+  .absolute-xl  { position: absolute; }
+  .fixed-xl  { position: fixed; }
 }

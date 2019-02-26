@@ -5,30 +5,13 @@
    Media Query Extensions:
      -ns = not-small
      -m  = medium
-     -l  = large
+	 -l  = large
+	 -xl = extra-large
 
 */
 
-
-.ws-normal { white-space: normal; }
-.nowrap { white-space: nowrap; }
-.pre { white-space: pre; }
-
-@media (--breakpoint-not-small) {
-  .ws-normal-ns { white-space: normal; }
-  .nowrap-ns { white-space: nowrap; }
-  .pre-ns { white-space: pre; }
+@media (--breakpoint-extra-large) {
+  .ws-normal-xl { white-space: normal; }
+  .nowrap-xl { white-space: nowrap; }
+  .pre-xl { white-space: pre; }
 }
-
-@media (--breakpoint-medium) {
-  .ws-normal-m { white-space: normal; }
-  .nowrap-m { white-space: nowrap; }
-  .pre-m { white-space: pre; }
-}
-
-@media (--breakpoint-large) {
-  .ws-normal-l { white-space: normal; }
-  .nowrap-l { white-space: nowrap; }
-  .pre-l { white-space: pre; }
-}
-
