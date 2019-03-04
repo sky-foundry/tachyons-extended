@@ -10,7 +10,32 @@
 
 */
 
-@media (--breakpoint-extra-large){
+.transition-none {
+	transition: none;
+}
+
+@media (--breakpoint-not-small) {
+	.transition-none-ns {
+		transition: none;
+	}
+}
+@media (--breakpoint-medium) {
+	.transition-none-m {
+		transition: none;
+	}
+}
+@media (--breakpoint-large) {
+	.transition-none-l {
+		transition: none;
+	}
+}
+@media (--breakpoint-extra-large) {
+	.transition-none-xl {
+		transition: none;
+	}
+}
+
+@media (--breakpoint-extra-large) {
   .center-xl {
     margin-right: auto;
     margin-left: auto;

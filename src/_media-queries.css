@@ -28,6 +28,12 @@
     }
   }
 
+  @media (--breakpoint-extra-large) {
+    .extra-large-and-larger-screen-specific-style {
+      background-color: red;
+    }
+  }
+
 */
 
 /* Media Queries */
