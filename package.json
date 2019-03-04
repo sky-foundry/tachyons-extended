@@ -1,6 +1,6 @@
 {
   "name": "@sky-foundry/tachyons-extended",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extended styles for tachyons",
   "author": "Sky Foundry <info@skyfoundry.com.au>",
   "style": "css/tachyons-extended.min.css",
